@@ -1,4 +1,9 @@
 import express from "express";
 const app = express();
 
-app.listen(3000, console.log("connected To server 3000"));
+app.get("/",(req,res)=>{
+    res.send("Hello World")
+})
+
+
+app.listen(3000, console.log("connected to server 3000"));
